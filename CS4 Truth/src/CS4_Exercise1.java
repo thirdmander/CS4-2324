@@ -1,4 +1,4 @@
-public class App {
+public class CS4_Exercise1 {
     public static void main(String[] args) throws Exception {
         String nameOne = "Emmanuel Arizabal";
         String nameTwo = "Abram Sillano";
