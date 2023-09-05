@@ -5,9 +5,9 @@ public class Song {
     String songArtist;
     int songLength; // in seconds
 
-    public Song(String title, String artist, int length) {
-        songTitle = title;
-        songArtist = artist;
-        songLength = length;
+    public Song(String songTitle, String songArtist, int songLength) {
+        this.songTitle = songTitle;
+        this.songArtist = songArtist;
+        this.songLength = songLength;
     }
 }

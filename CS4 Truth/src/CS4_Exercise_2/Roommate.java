@@ -5,9 +5,9 @@ public class Roommate{
         int messagesCount;
         boolean hasJowa;
         
-        public Roommate(String name, int numOfMsgs, boolean jowaStatus){
-        fullName = name;
-        messagesCount = numOfMsgs;
-        hasJowa = jowaStatus;
+        public Roommate(String fullName, int messagesCount, boolean hasJowa){
+        this.fullName = fullName;
+        this.messagesCount = messagesCount;
+        this.hasJowa = hasJowa;
         }
 }

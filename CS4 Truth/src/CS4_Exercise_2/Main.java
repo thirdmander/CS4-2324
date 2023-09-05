@@ -1,16 +1,18 @@
 package CS4_Exercise_2;
 public class Main{
     public static void main(String[] args){
-        Roommate roommateOne = new Roommate("Emmanuel Arizabal", 120, true);
-        Roommate roommateTwo = new Roommate("Abram Sillano", 12, false);
-        Roommate roommateThree = new Roommate("Dave Laforteza", 57, false);
+        Roommate emman = new Roommate("Emmanuel Arizabal", 120, true);
+        Roommate abram = new Roommate("Abram Sillano", 12, false);
+        Roommate dave = new Roommate("Dave Laforteza", 57, false);
 
-        Song songOne = new Song("Limbo", "Keshi", 212);
-        Song songTwo = new Song("bubble tea", "Zamir, Marc Indigo", 168);
+        Song limbo = new Song("Limbo", "Keshi", 212);
+        Song bubbleTea = new Song("bubble tea", "Zamir, Marc Indigo", 168);
         
-        Singer singerOne = new Singer("Ed Sheeran", 50, 10000.00, songOne);
+        Singer edSheeran = new Singer("Ed Sheeran", 50, 10000.00, limbo);
 
-        singerOne.performForAudience(20);
-        singerOne.changeFavSong(songTwo);
+        edSheeran.performForAudience(12);
+        edSheeran.changeFavSong(bubbleTea);
+
+        System.out.println("My roommates are " + emman.fullName + ", " + dave.fullName + ", and " + abram.fullName);
     }
 }
