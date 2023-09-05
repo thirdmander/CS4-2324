@@ -1,4 +1,4 @@
-package CS4_Exercise_2;
+package CS4_Exercise_2_3;
 public class Main{
     public static void main(String[] args){
         //creating new instances of roommates

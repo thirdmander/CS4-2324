@@ -1,4 +1,4 @@
-package CS4_Exercise_2;
+package CS4_Exercise_2_3;
 
 public class Song {
     private String songTitle;
