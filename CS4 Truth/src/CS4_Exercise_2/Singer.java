@@ -40,22 +40,26 @@ public class Singer{
     }
 
     //public methods 
+    //increases noOfPerformances and totalPerformances by 1 and earnings by 100 for each person
     public void performForAudience(int noOfPeople){
-    //increases noOfPerformances by 1 and earnings by 100 for each person
         noOfPerformances += 1;
         totalPerformances += 1;
         earnings += 100 * noOfPeople;
     }
 
+    /* increases noOfPerformances for each singer and totalPeformances by 1, 
+       adds earnings for each singer by 50 (100 split for both) for each person
+       increases totalPerformances by 2, assuming that a performance counts for both*/
     public void performForAudience(int noOfPeople, Singer collabSinger) {
-    //increases noOfPerformances by 1 and earnings by 50 for each person
         noOfPerformances += 1;
-        totalPerformances += 1;
+        collabSinger.noOfPerformances += 1;
         earnings += 50 * noOfPeople;
         collabSinger.earnings += 50 * noOfPeople;
+        totalPerformances += 2;
     }
+
     public void changeFavSong(Song newSong){
-    //changes favoriteSong
+    //changes the singers favoriteSong 
         this.favoriteSong = newSong;
     }
 
