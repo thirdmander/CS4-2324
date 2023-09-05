@@ -9,10 +9,14 @@ public class Main{
         Song bubbleTea = new Song("bubble tea", "Zamir, Marc Indigo", 168);
         
         Singer edSheeran = new Singer("Ed Sheeran", 50, 10000.00, limbo);
-
-        edSheeran.performForAudience(12);
+        Singer danielPadilla = new Singer("Daniel Padilla", 10, 1000.00, bubbleTea);
+        
+        edSheeran.performForAudience(20, danielPadilla);
         edSheeran.changeFavSong(bubbleTea);
 
+        System.out.println(Singer.getTotalPerformances());
+        System.out.println(edSheeran.getEarnings());
+        System.out.println(danielPadilla.getEarnings());
         System.out.println("My roommates are " + emman.fullName + ", " + dave.fullName + ", and " + abram.fullName);
     }
 }
