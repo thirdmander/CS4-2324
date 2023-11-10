@@ -2,8 +2,9 @@ package exercise6truthlaolaureano;
 import java.util.ArrayList;
 
 public class Monster {
+    //changed private int variables to protected
     private final String name, type, strongAgainst, weakAgainst;
-    private int maxHP, hp, atk, def, xp, lvl;
+    protected int maxHP, hp, atk, def, xp, lvl;
     private boolean guard, charge;
     private static ArrayList<Monster> monsterList = new ArrayList<>();
 
