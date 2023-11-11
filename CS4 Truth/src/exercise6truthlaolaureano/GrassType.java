@@ -9,7 +9,7 @@ public class GrassType extends Monster{
     public void special(){
         hp += maxHP * 0.2;
         if(hp > maxHP) hp = maxHP;
-        System.out.println(getName() + " raised its attack!");
+        System.out.println(getName() + " healed!");
     }
 
     @Override

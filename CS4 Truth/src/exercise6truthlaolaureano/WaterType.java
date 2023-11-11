@@ -11,6 +11,6 @@ public class WaterType extends Monster{
     public void special(){
         def += 2;
         hp *= 0.9;
-        System.out.println(getName() + " raised its attack!");
+        System.out.println(getName() + " raised its defense!");
     }
 }
