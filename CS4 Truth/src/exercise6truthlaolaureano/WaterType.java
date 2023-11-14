@@ -10,7 +10,7 @@ public class WaterType extends Monster{
     @Override
     public void special(){
         def += 2;
-        hp *= 0.9;
+        hp -= (0.1 * maxHP);
         System.out.println(getName() + " raised its defense!");
     }
 }
