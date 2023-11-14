@@ -1,4 +1,4 @@
-package exercise6truthlaolaureano;
+package exercise07truthlaolaureano;
 
 public class FireType extends Monster{
     public FireType(String name, int hp, int base){

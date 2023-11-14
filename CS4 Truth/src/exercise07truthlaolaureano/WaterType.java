@@ -1,4 +1,4 @@
-package exercise6truthlaolaureano;
+package exercise07truthlaolaureano;
 
 public class WaterType extends Monster{
     public WaterType(String name, int hp, int base){

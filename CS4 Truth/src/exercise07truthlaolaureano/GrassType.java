@@ -1,4 +1,4 @@
-package exercise6truthlaolaureano;
+package exercise07truthlaolaureano;
 
 public class GrassType extends Monster{
     public GrassType(String name, int hp, int base){

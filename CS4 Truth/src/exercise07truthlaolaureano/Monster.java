@@ -1,7 +1,7 @@
-package exercise6truthlaolaureano;
+package exercise07truthlaolaureano;
 import java.util.ArrayList;
 
-public class Monster {
+public abstract class Monster implements Interactive{
     //changed private int variables to protected
     private final String name, type, strongAgainst, weakAgainst;
     protected int maxHP, hp, atk, def, xp, lvl;
@@ -93,9 +93,7 @@ public class Monster {
         System.out.println(name + " rested. It's health is now " + hp + ".");
     }
 
-    public void special(){
-        System.out.println(name + " did a pose.");
-    }
+    public abstract void special();
 
     public void resetHealth(){
         hp = maxHP;
@@ -115,4 +113,7 @@ public class Monster {
         }
     }
 
+    public void interact(){
+        System.out.println("It's a " + name + ", a " + type + " type.");
+    }
 }
