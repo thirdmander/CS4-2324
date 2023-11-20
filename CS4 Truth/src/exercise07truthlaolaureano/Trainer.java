@@ -41,4 +41,10 @@ public class Trainer extends Character {
     public void inspect(Interactive i){
         i.interact();
     }
+
+    public void addTeam(Monster m){
+        team.add(m);
+        activeMonster = m;
+        System.out.println(m.getName() + " joined the party!");
+    }
 }
