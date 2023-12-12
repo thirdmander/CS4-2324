@@ -1,4 +1,4 @@
-package exercise07truthlaolaureano;
+package exercise09truthlaolaureano;
 
 public class NPC extends Character implements Interactive{
     private String dialog;

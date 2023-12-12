@@ -1,4 +1,4 @@
-package exercise07truthlaolaureano;
+package exercise09truthlaolaureano;
 import java.util.ArrayList;
 
 public class Trainer extends Character {
@@ -46,5 +46,26 @@ public class Trainer extends Character {
         team.add(m);
         activeMonster = m;
         System.out.println(m.getName() + " joined the party!");
+    }
+
+    public void sureCapture(Monster m) throws AlreadyCapturedException, FullTeamException{
+        if(team.contains(m)){
+            throw new AlreadyCapturedException(m.getName() + " is already in your party!");
+        }
+
+        if(team.size() > 6){
+            throw new FullTeamException("Your party is already full!");
+        }
+
+        team.add(m);
+        System.out.printf("%s was successfully captured.%n", m.getName());
+    }
+    
+    public void release(Monster m) throws NotInTeamException{
+        if(!team.contains(m)){
+            throw new NotInTeamException(m.getName() + " is not in your party!");
+        }
+        team.remove(m);
+        System.out.printf("%s was released from the team.%n", m.getName());
     }
 }

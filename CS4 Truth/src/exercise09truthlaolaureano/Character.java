@@ -1,4 +1,4 @@
-package exercise07truthlaolaureano;
+package exercise09truthlaolaureano;
 
 public abstract class Character {
     private String name;

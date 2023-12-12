@@ -1,4 +1,4 @@
-package exercise07truthlaolaureano;
+package exercise09truthlaolaureano;
 import java.util.ArrayList;
 
 public class Location implements Interactive{

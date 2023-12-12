@@ -1,4 +1,4 @@
-package exercise07truthlaolaureano;
+package exercise09truthlaolaureano;
 import java.util.ArrayList;
 
 public abstract class Monster implements Interactive{
@@ -115,5 +115,17 @@ public abstract class Monster implements Interactive{
 
     public void interact(){
         System.out.println("It's a " + name + ", a " + type + " type.");
+    }
+
+    public static Monster selectMonster(String n) throws MonsterNotFoundException {
+        boolean found = false;
+        for(Monster m : monsterList){
+            if(m.getName().equals(n)){
+                return m;
+            } else {
+                throw new MonsterNotFoundException(n + " is not a valid Monster.");
+            }
+        }
+        return null;
     }
 }
