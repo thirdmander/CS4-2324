@@ -120,12 +120,16 @@ public abstract class Monster implements Interactive{
     public static Monster selectMonster(String n) throws MonsterNotFoundException {
         boolean found = false;
         for(Monster m : monsterList){
-            if(m.getName().equals(n)){
+            if(m.getName().equals(n) || m.getName().toLowerCase().equals(n)){
+                found = true;
                 return m;
-            } else {
-                throw new MonsterNotFoundException(n + " is not a valid Monster.");
-            }
+            } 
+        }
+        
+        if(found == false){
+            throw new MonsterNotFoundException(n + " is not a valid Monster.");
         }
         return null;
+        
     }
 }

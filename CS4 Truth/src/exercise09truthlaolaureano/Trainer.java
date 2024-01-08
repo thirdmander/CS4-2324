@@ -48,15 +48,17 @@ public class Trainer extends Character {
         System.out.println(m.getName() + " joined the party!");
     }
 
-    public void sureCapture(Monster m) throws AlreadyCapturedException, FullTeamException{
+    public void sureCapture(Monster m) throws AlreadyCapturedException, FullTeamException, MonsterNotFoundException{
         if(team.contains(m)){
             throw new AlreadyCapturedException(m.getName() + " is already in your party!");
         }
 
-        if(team.size() > 6){
+        if(team.size() >= 6){
             throw new FullTeamException("Your party is already full!");
         }
-
+        if(m == null){
+            throw new MonsterNotFoundException("There is no a valid monster.");
+        }
         team.add(m);
         System.out.printf("%s was successfully captured.%n", m.getName());
     }

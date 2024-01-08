@@ -12,7 +12,7 @@ public class Main {
         
         Trainer player = new Trainer("Steve");
         Monster m0 = new NormalType("Rattata", 15, 5);
-        Monster m1 = new NormalType("Meowth", 15, 5);
+        Monster m1 = new NormalType("Persian", 15, 5);
         Monster m2 = new NormalType("Kangaskhan", 15, 5);
         Monster m3 = new NormalType("Tauros", 15, 5);
         Monster m4 = new NormalType("Ditto", 15, 5);
@@ -34,7 +34,6 @@ public class Main {
                 try {
                     selected = Monster.selectMonster(name);
                 } catch (MonsterNotFoundException e) {
-                    notfound++;
                     System.out.println(e.getMessage());
                 }
             }
@@ -49,6 +48,8 @@ public class Main {
                     } catch (FullTeamException e) {
                         fullteam++;
                         System.out.println(e.getMessage());
+                    } catch(MonsterNotFoundException e) {
+                        notfound++;
                     }
                     break;
                 case "release":
