@@ -127,7 +127,7 @@ public abstract class Monster implements Interactive{
         }
         
         if(found == false){
-            throw new MonsterNotFoundException(n + " is not a valid Monster.");
+            throw new MonsterNotFoundException(n);
         }
         return null;
         
