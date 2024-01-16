@@ -2,7 +2,7 @@ package q2project_truthlaolaureano;
 import java.util.ArrayList;
 
 public class Player {
-    private int health, attack = 0;
+    protected int health, attack = 0;
     private int xLocation, yLocation;
     private ArrayList<Item> inventory;
 
