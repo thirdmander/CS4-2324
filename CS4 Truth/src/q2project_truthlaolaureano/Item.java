@@ -8,5 +8,4 @@ public abstract class Item {
         this.description = d;
     }
 
-    public abstract void use();
 }

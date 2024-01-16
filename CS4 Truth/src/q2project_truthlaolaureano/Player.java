@@ -15,7 +15,37 @@ public class Player {
     }
 
     public void attackMonster(Monster m){
-        m.health -= attack;
+        while(m.health > 0){
+            m.health -= attack;
+        }
+    }
+
+    public void move(String direction){
+        //this assumes that 0,0 is in the bottom right corner of the map
+        switch(direction){
+            case "East":
+                xLocation++;
+                break;
+            case "West":
+                xLocation--;
+                break;
+            case "North":
+                yLocation++;
+                break;
+            case "South":
+                yLocation--;
+                break;
+        }
+    }
+
+    public void lootRoom(Room r){
+        if (r.hasItems()){
+            for (Item i : r.items){
+                inventory.add(i);
+            }
+        } else {
+            System.out.println("You search the room for anything you can find, yet there's nothing of value.");
+        }
     }
 
     public int getHealth() {
