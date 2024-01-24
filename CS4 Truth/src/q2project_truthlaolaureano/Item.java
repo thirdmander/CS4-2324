@@ -7,5 +7,4 @@ public abstract class Item {
         this.name = n;
         this.description = d;
     }
-
 }

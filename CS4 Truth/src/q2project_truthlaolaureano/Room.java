@@ -5,14 +5,16 @@ public class Room {
     protected String description;
     protected int xLocation, yLocation;
     protected ArrayList<Item> items;
-    protected boolean hasMonster, hasItems;
+    protected boolean hasMonster, hasItems, isLocked, isFinalRoom;
 
-    public Room(String d, int x, int y, boolean hm, boolean hi){
+    public Room(String d, int x, int y, boolean hm, boolean hi, boolean il, boolean ifr){
         this.description = d;
         this.xLocation = x;
         this.yLocation = y;
         this.hasMonster = hm;
         this.hasItems = hi;
+        this.isLocked = il;
+        this.isFinalRoom = ifr;
     }
 
 
@@ -38,6 +40,14 @@ public class Room {
 
     public boolean hasItems() {
         return hasItems;
+    }
+
+    public boolean isLocked() {
+        return isLocked;
+    }
+
+    public boolean isFinalRoom() {
+        return isFinalRoom;
     }
 
     
