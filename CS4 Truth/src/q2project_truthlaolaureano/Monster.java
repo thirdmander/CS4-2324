@@ -17,6 +17,8 @@ public class Monster {
     public void attackPlayer(Player p){
         p.health = p.getHealth() - attack;
     }
+
+    //getters and setters
     public String getName() {
         return name;
     }
@@ -39,6 +41,30 @@ public class Monster {
 
     public boolean isAlive() {
         return isAlive;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setKind(String kind) {
+        this.kind = kind;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public void setAttack(int attack) {
+        this.attack = attack;
+    }
+
+    public void setHealth(int health) {
+        this.health = health;
+    }
+
+    public void setAlive(boolean isAlive) {
+        this.isAlive = isAlive;
     }
     
 }

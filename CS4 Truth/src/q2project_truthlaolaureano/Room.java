@@ -18,6 +18,7 @@ public class Room {
     }
 
 
+    //getters and setters
     public String getDescription() {
         return description;
     }
@@ -50,5 +51,36 @@ public class Room {
         return isFinalRoom;
     }
 
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public void setxLocation(int xLocation) {
+        this.xLocation = xLocation;
+    }
+
+    public void setyLocation(int yLocation) {
+        this.yLocation = yLocation;
+    }
+
+    public void setItems(ArrayList<Item> items) {
+        this.items = items;
+    }
+
+    public void setHasMonster(boolean hasMonster) {
+        this.hasMonster = hasMonster;
+    }
+
+    public void setHasItems(boolean hasItems) {
+        this.hasItems = hasItems;
+    }
+
+    public void setLocked(boolean isLocked) {
+        this.isLocked = isLocked;
+    }
+
+    public void setFinalRoom(boolean isFinalRoom) {
+        this.isFinalRoom = isFinalRoom;
+    }
     
 }
