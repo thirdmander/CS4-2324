@@ -106,6 +106,10 @@ public class Main {
             p1.useKey(k1, r4);
             p1.move("East");
             
+            if(r4.isFinalRoom()){
+                System.out.println("As you move into the room, you see the stairs leading to the surface. You've escaped Crete's Labyrinth!");
+            }
+
         } catch(InvalidRoomException e) {
             System.out.println(e);
         } catch (NotInInventoryException e) {
