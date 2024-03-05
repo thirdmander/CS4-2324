@@ -10,6 +10,7 @@ public class App extends Application {
         Parent root = FXMLLoader.load(getClass().getResource("View.fxml"));
         Scene scene = new Scene(root);
       
+        primaryStage.setTitle("Exercise 13");
         primaryStage.setScene(scene);
         primaryStage.show();
     }

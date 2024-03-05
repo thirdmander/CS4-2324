@@ -3,7 +3,9 @@
         "src",
         "lib\\hellofx",
         "lib\\Exercise11",
-        "lib\\exercise11truthlaolaureano"
+        "lib\\exercise11truthlaolaureano",
+        "lib\\exercise12truthlaolaureano",
+        "lib\\exercise13truthlaolaureano"
     ],
     "java.project.outputPath": "bin",
     "java.project.referencedLibraries": [
