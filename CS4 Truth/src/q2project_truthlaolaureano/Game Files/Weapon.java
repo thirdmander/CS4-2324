@@ -1,5 +1,3 @@
-package q2project_truthlaolaureano;
-
 public class Weapon extends Item {
     protected int attackAdded = 0;
 

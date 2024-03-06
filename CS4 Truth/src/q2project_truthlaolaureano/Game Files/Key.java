@@ -1,4 +1,4 @@
-public class Key extends Item{
+public class Key<Room> extends Item{
     protected Room unlocksRoom;
     
     public Key(String n, String d, Room r) {
