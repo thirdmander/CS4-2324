@@ -1,5 +1,3 @@
-package q2project_truthlaolaureano;
-
 public abstract class Item {
     protected String name, description;
 

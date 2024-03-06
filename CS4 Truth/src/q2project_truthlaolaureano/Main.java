@@ -1,5 +1,3 @@
-package q2project_truthlaolaureano;
-
 import java.util.ArrayList;
 import java.util.Scanner;
 

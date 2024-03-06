@@ -1,5 +1,3 @@
-package q2project_truthlaolaureano;
-
 public class Key extends Item{
     protected Room unlocksRoom;
     
