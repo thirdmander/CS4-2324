@@ -6,6 +6,21 @@
     "configurations": [
         {
             "type": "java",
+            "name": "FXExer14",
+            "request": "launch",
+            "mainClass": "FXExer14",
+            "projectName": "CS4-2324_ecac84a5"
+        },
+        {
+            "type": "java",
+            "name": "FXExer14",
+            "request": "launch",
+            "vmArgs": "--module-path 'C:/Users/Leona Lao/Documents/JavaFX/javafx-sdk-21.0.2/lib' --add-modules javafx.controls,javafx.fxml",
+            "mainClass": "lib.exercise14truthlaolaureano.FXExer14",
+            "projectName": "CS4-2324_ecac84a5"
+        },
+        {
+            "type": "java",
             "name": "Current File",
             "request": "launch",
             "mainClass": "${file}"
@@ -14,7 +29,7 @@
             "type": "java",
             "name": "App",
             "request": "launch",
-            "vmArgs": "--module-path 'C:/Users/Leona Lao/Documents/JavaFX/javafx-sdk-21.0.2/lib' --add-modules javafx.controls,javafx.fxml", 
+            "vmArgs": "--module-path 'C:/Users/Leona Lao/Documents/JavaFX/javafx-sdk-21.0.2/lib' --add-modules javafx.controls,javafx.fxml",
             "mainClass": "App",
             "projectName": "CS4-2324_ecac84a5"
         }
